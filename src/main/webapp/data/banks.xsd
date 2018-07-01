@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/banks"
+        xmlns:tns="http://www.example.com/banks"
+        elementFormDefault="qualified">
+
+    <element name="banks">
+        <complexType>
+            <sequence>
+                <element ref="tns:deposite"
+                         minOccurs="16"
+                         maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="deposite" type="tns:Deposite" abstract="true"/>
+    <element name="demand" type="tns:Demand" substitutionGroup="tns:deposite"/>
+    <element name="urgent" type="tns:Urgent" substitutionGroup="tns:deposite"/>
+    <element name="estimated" type="tns:Estimated" substitutionGroup="tns:deposite"/>
+    <element name="accumutation" type="tns:Accumutation" substitutionGroup="tns:deposite"/>
+    <element name="saving" type="tns:Saving" substitutionGroup="tns:deposite"/>
+    <element name="metal" type="tns:Metal" substitutionGroup="tns:deposite"/>
+
+    <complexType name="Deposite">
+        <sequence>
+            <element name="depositor" type="tns:Depositor"/>
+            <element name="amount" type="tns:Amount"/>
+            <element name="profitability" type="tns:Profitability"/>
+            <element name="timeConstraints" type="tns:TimeConstraints"/>
+        </sequence>
+        <attribute name="account-id" type="tns:Account-id" use="required"/>
+    </complexType>
+
+    <complexType name="Demand">
+        <complexContent>
+            <extension base="tns:Deposite">
+                <attribute name="account-id" type="tns:Account-id" use="required"/>
+                <attribute name="bankname" type="tns:Bankname" default="Newspaper edition" use="required"/>
+                <attribute name="country" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Urgent">
+        <complexContent>
+            <extension base="tns:Deposite">
+                <attribute name="account-id" type="tns:Account-id" use="required"/>
+                <attribute name="bankname" type="tns:Bankname" default="Newspaper edition" use="required"/>
+                <attribute name="country" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Estimated">
+        <complexContent>
+            <extension base="tns:Deposite">
+                <attribute name="account-id" type="tns:Account-id" use="required"/>
+                <attribute name="bankname" type="tns:Bankname" default="Newspaper edition" use="required"/>
+                <attribute name="country" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Accumutation">
+        <complexContent>
+            <extension base="tns:Deposite">
+                <attribute name="account-id" type="tns:Account-id" use="required"/>
+                <attribute name="bankname" type="tns:Bankname" default="Newspaper edition" use="required"/>
+                <attribute name="country" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Saving">
+        <complexContent>
+            <extension base="tns:Deposite">
+                <attribute name="account-id" type="tns:Account-id" use="required"/>
+                <attribute name="bankname" type="tns:Bankname" default="Newspaper edition" use="required"/>
+                <attribute name="country" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Metal">
+        <complexContent>
+            <extension base="tns:Deposite">
+                <attribute name="account-id" type="tns:Account-id" use="required"/>
+                <attribute name="bankname" type="tns:Bankname" default="Newspaper edition" use="required"/>
+                <attribute name="country" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="country">
+        <restriction base="string">
+            <pattern value="\\p{Upper}(\\p{Lower}+)|(\\p{Blank})"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Account-id">
+        <restriction base="ID">
+            <pattern value="\\p{Digit}{7}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Bankname">
+        <restriction base="string">
+            <pattern value="\\p{Upper}(\\p{Lower}+)|(\\p{Blank})"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Depositor">
+        <restriction base="ID">
+            <pattern value="\\p{Upper}\\p{Lower}+(\\p{Upper}\\p{Lower}+)|(\\p{Blank})"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Amount">
+        <restriction base="string">
+            <pattern value="\\p{Digit}{1,}[.]\\p{Digit}{2}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Profitability">
+        <restriction base="string">
+            <pattern value="\\p{Digit}{1,}[.]\\p{Digit}{2}[%]"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="TimeConstraints">
+        <restriction base="string">
+            <pattern value="\\p{Digit}\\p{Blank}[month|year]"/>
+        </restriction>
+    </simpleType>
+
+</schema>

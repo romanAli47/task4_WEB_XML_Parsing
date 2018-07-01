@@ -1,0 +1,6 @@
+2018-06-22 23:41:27.195 [main] WARN  by.alikevich.task4.builder.DOMDepositeParser - java.io.FileNotFoundException: /Users/Romanalikevich/Desktop/task4/banks.xml (No such file or directory)
+2018-06-22 23:43:48.405 [main] WARN  by.alikevich.task4.builder.DOMDepositeParser - java.io.FileNotFoundException: /Users/Romanalikevich/Desktop/task4/banks.xml (No such file or directory)
+2018-06-30 12:00:57.353 [main] WARN  by.alikevich.task4.builder.DOMDepositeParser - java.io.FileNotFoundException: /Users/Romanalikevich/Desktop/task4/data/banks.xml (No such file or directory)
+2018-06-30 12:00:57.387 [main] WARN  by.alikevich.task4.builder.DOMDepositeParser - java.io.FileNotFoundException: /Users/Romanalikevich/Desktop/task4/data/banks.xml (No such file or directory)
+2018-06-30 19:32:34.107 [main] WARN  by.alikevich.task4.builder.DOMDepositeParser - java.io.FileNotFoundException: /Users/Romanalikevich/Desktop/task4/data/banks.xml (No such file or directory)
+2018-06-30 19:32:34.167 [main] WARN  by.alikevich.task4.builder.DOMDepositeParser - java.io.FileNotFoundException: /Users/Romanalikevich/Desktop/task4/data/banks.xml (No such file or directory)

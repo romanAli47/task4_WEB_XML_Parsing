@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banks>
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="banks.xsd"
+        xsi:schemaLocation="http://www.example.com/banks banks.xsd">
+
+    <demand country="China" account-id="1234567" bankname="Vesti">
+        <depositor>Roman Alikevich</depositor>
+        <amount>50000</amount>
+        <profitability>117</profitability>
+        <timeConstraints>137</timeConstraints>
+    </demand>
+
+    <demand country="Belarus" account-id="1564567" bankname=" edition">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50001</amount>
+        <profitability>116</profitability>
+        <timeConstraints>136</timeConstraints>
+    </demand>
+
+    <demand country="Russian" account-id="1004567" bankname="Newspaper цукауцedition">
+    <depositor>Roman Vasylenko</depositor>
+    <amount>50002</amount>
+    <profitability>115</profitability>
+    <timeConstraints>135</timeConstraints>
+</demand>
+
+    <urgent country="Canada" account-id="1245907" bankname="Novosыфвti dnya">
+        <depositor>Vlad Alikevich</depositor>
+        <amount>50003</amount>
+        <profitability>114</profitability>
+        <timeConstraints>134</timeConstraints>
+    </urgent>
+
+    <urgent country="Belgia" account-id="0012457" bankname="Newspыфвфывaper edition">
+        <depositor>Vlad Vasylenko</depositor>
+        <amount>50004</amount>
+        <profitability>113</profitability>
+        <timeConstraints>133</timeConstraints>
+    </urgent>
+
+    <urgent country="Franch" account-id="1000000" bankname="Newпарапысмspaper edition">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50005</amount>
+        <profitability>112</profitability>
+        <timeConstraints>132</timeConstraints>
+    </urgent>
+
+    <estimated country="China" account-id="0912356" bankname="Jouсямаяrnal edition">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50006</amount>
+        <profitability>111</profitability>
+        <timeConstraints>131</timeConstraints>
+    </estimated>
+
+    <estimated country="China" account-id="0912356" bankname="Bodybuilч]ывЫЫФding life">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50007</amount>
+        <profitability>110</profitability>
+        <timeConstraints>130</timeConstraints>
+    </estimated>
+
+    <estimated country="Germany" account-id="0012457" bankname="GlaЧС]ЧЯСmour journal">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50008</amount>
+        <profitability>109</profitability>
+        <timeConstraints>129</timeConstraints>
+    </estimated>
+
+    <accumutation country="Germany" account-id="0912356" bankname="JournaЯЧСФСЧЯl edition">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50009</amount>
+        <profitability>108</profitability>
+        <timeConstraints>128</timeConstraints>
+    </accumutation>
+
+    <accumutation country="Germany" account-id="0000034" bankname="JournalРАПТИА edition">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50010</amount>
+        <profitability>107</profitability>
+        <timeConstraints>127</timeConstraints>
+    </accumutation>
+
+    <accumutation country="Germany" account-id="0000023" bankname="HeВАМВМllo">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50011</amount>
+        <profitability>106</profitability>
+        <timeConstraints>126</timeConstraints>
+    </accumutation>
+
+    <saving country="China"  account-id="0000876" bankname="BookЧСЯМСЯЧlet edition">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50012</amount>
+        <profitability>105</profitability>
+        <timeConstraints>125</timeConstraints>
+    </saving>
+
+    <saving country="China"  account-id="0000005" bankname="BookСЯЧМlet 14 ediСЯМtion">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50013</amount>
+        <profitability>104</profitability>
+        <timeConstraints>124</timeConstraints>
+    </saving>
+    <saving country="Canada"  account-id="0000002" bankname="BooНЕГklet 10ГНЕЕ0 years">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50014</amount>
+        <profitability>103</profitability>
+        <timeConstraints>123</timeConstraints>
+    </saving>
+
+    <metal country="Canada"  account-id="0000001" bankname="HeРОАllo РОАРОbooklet">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50015</amount>
+        <profitability>102</profitability>
+        <timeConstraints>122</timeConstraints>
+    </metal>
+
+    <metal country="Canada"  account-id="0000001" bankname="HelВОПАРlo booklet">
+        <depositor>Roman Vasylenko</depositor>
+        <amount>50016</amount>
+        <profitability>101</profitability>
+        <timeConstraints>121</timeConstraints>
+    </metal>
+</banks>

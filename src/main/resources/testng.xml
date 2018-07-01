@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="ParserHandler" >
+        <classes>
+            <class name="by.alikevich.task4.builder.ParserHandler" />
+        </classes>
+    </test>
+
+    <test name="SAXDepositeParser">
+        <classes>
+            <class name="by.alikevich.task4.builder.SAXDepositeParser" />
+        </classes>
+    </test>
+
+    <test name="DOMDepositeParser">
+        <classes>
+            <class name="by.alikevich.task4.builder.DOMDepositeParser" />
+        </classes>
+    </test>
+    <test name="STAXDepositeParser">
+        <classes>
+            <class name="by.alikevich.task4.builder.STAXDepositeParser" />
+        </classes>
+    </test>
+    <test name="MainController">
+        <classes>
+            <class name="by.alikevich.task4.controller.MainController" />
+        </classes>
+    </test>
+    <test name="BankBuilderFactory">
+        <classes>
+            <class name="by.alikevich.task4.builder.BankBuilderFactory" />
+        </classes>
+    </test>
+</suite>
